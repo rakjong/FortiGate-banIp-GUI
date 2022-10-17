@@ -1,0 +1,7 @@
+<RCC>
+ <qresource>
+ <file>erroricon.ico</file>
+ <file>shellcommand_free.ico</file>
+ <file>banip.ico</file>
+ </qresource>
+ </RCC>
