@@ -88,7 +88,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "IP封堵工具v1.6--by网络组+安全组"))#111
+        MainWindow.setWindowTitle(_translate("MainWindow", "IP封堵工具"))#111
         self.label.setText(_translate("MainWindow", "输入封禁及解封的IP（可批量）"))
         self.pushButton.setText(_translate("MainWindow", "封禁"))
         self.pushButton_2.setText(_translate("MainWindow", "解封"))
