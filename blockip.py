@@ -83,7 +83,7 @@ def blockIp():
                         f.write(f'{ip:<18}')
                         f.write(f'{running_time}\n')
             except:
-                ui.textBrowser.append("网络不通或尚未取得封禁账号登录权限")
+                ui.textBrowser.append("网络不通或登录失败")
         else:
             ui.textBrowser.setText("ip错误,请检查")
     ui.plainTextEdit.clear()
@@ -118,7 +118,7 @@ def unBlockIp():
                             f.write(f'{ip:<18}')
                             f.write(f'{running_time}\n')
                 except:
-                    ui.textBrowser.append("网络不通或尚未取得封禁账号登录权限")
+                    ui.textBrowser.append("网络不通或登录失败")
                 
         else:
             ui.textBrowser.append("ip错误,请检查")
@@ -131,12 +131,6 @@ if __name__ == '__main__':
     ui = block_ip_2_ui.Ui_MainWindow()
     ui.setupUi(MainWindow)
     MainWindow.show()
-    ui.textBrowser.append("！如果长时间停止响应，请检查网络连通性")
-    ui.textBrowser.append("本次更新主要：")#输出提示信息
-    ui.textBrowser.append("1、补充新增白名单；2、解决ip带有空格绕过白名单限制的bug；")
-    ui.textBrowser.append("3、优化批量功能；4、GUI界面增强用户体验")
-    ui.textBrowser.append("To do:")
-    ui.textBrowser.append("1、白名单列表分离，便于维护；2、支持选择受攻击系统、攻击地址和攻击类型，结果保存到ip封禁统计表\n")
     ui.pushButton.clicked.connect(blockIp)
     ui.pushButton_2.clicked.connect(unBlockIp)
     sys.exit(app.exec_())
